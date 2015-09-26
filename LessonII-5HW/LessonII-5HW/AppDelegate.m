@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "UsersDbClass.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //Создание первых пользователей, что бы не было пусто
+    UsersDbClass * users = [[UsersDbClass alloc] init];
+    [users addNewUsers:@"vk.com" andLogin:@"kirill" andPassword:@"123" andComments:@"Мой пароль для ВК"];
+    [users addNewUsers:@"mail.ru" andLogin:@"oxynote@bk.ru" andPassword:@"123" andComments:@"Мой пароль для Mail.ru"];
+    //
+    
     return YES;
 }
 
@@ -40,6 +48,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [MagicalRecord cleanUp];
 }
 
 @end

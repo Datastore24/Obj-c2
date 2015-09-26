@@ -10,4 +10,9 @@
 
 @interface UsersDbClass : NSObject
 
+-(void) addNewUsers: (NSString *) urlSite andLogin: (NSString *) login andPassword: (NSString *) password andComments: (NSString *) comments;
+- (void)deleteUsers:(NSString *)urlSite andLogin:(NSString *) login;
+- (BOOL)checkUsers:(NSString *) urlSite andLogin:(NSString *)login;
+-(NSArray *) showAllUsers;
+
 @end

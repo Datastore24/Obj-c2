@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *urlLabel;
+@property (weak, nonatomic) IBOutlet UILabel *loginLabel;
+@property (weak, nonatomic) IBOutlet UILabel *passwordLabel;
+@property (weak, nonatomic) IBOutlet UILabel *commentLabel;
 
 
 @end

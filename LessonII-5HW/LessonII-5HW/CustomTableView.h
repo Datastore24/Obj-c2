@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomTableView : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *urlLabel;
+@property (weak, nonatomic) IBOutlet UILabel *loginLabel;
+@property (weak, nonatomic) IBOutlet UILabel *commentLabel;
 
 @end

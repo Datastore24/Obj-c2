@@ -10,4 +10,12 @@
 
 @interface UsersInfoViewController : UIViewController
 
+@property (strong,nonatomic) NSString * usersUrlSite;
+@property (strong,nonatomic) NSString * usersLogin;
+@property (strong,nonatomic) NSString * usersPassowrd;
+@property (strong,nonatomic) NSString * usersComments;
+
+
+@property (assign,nonatomic) BOOL isInfo;
+
 @end
