@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SomePerson.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,52 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //Запись в базу данных
+    SomePerson * person = [NSEntityDescription insertNewObjectForEntityForName:@"SomePerson" inManagedObjectContext:self.managedObjectContext]; //Объект, который содержит описание сущности
+    
+    person.firstName = @"Кирилл"; //Присваимаем имя
+    person.lastName = @"Анатольевич"; //Присваиваем отчество
+    
+    NSError * error = nil; //Обработка ошибок
+    
+    //Проверка на ошибки
+    if([self.managedObjectContext save:&error]){
+        NSLog(@"Saved");
+    }else{
+        NSLog(@"error %@",error);
+    }
+    
+    //
+    
+    //Извлечение из базы данных
+    
+    NSFetchRequest * req = [[NSFetchRequest alloc] init]; // Запрос к базе данных
+    
+    NSEntityDescription * entDescription = [NSEntityDescription entityForName:@"SomePerson" inManagedObjectContext:self.managedObjectContext]; //Объект, который содержит описание сущности
+    
+    [req setEntity:entDescription]; //запрос по описанию этой сущности
+    
+    NSArray * array = [self.managedObjectContext executeFetchRequest:req error:&error]; //Создаем массив
+    
+    
+    //Перебор массива в цикле(но используя блоки)
+    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        SomePerson * personFromCoreData = (SomePerson *) obj; //Создаем объект для изъятия данных из массива
+        NSLog(@"firstName %@, lastName %@",personFromCoreData.firstName,personFromCoreData.lastName);
+    }];
+    
+    
+    //
+    
+    
+    //Хранение данных логин, пароль
+    [[NSUserDefaults standardUserDefaults] setValue:@"Value" forKey:@"key"];
+    
+    NSLog(@"%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"key"]);
+    
+    //
+    
     return YES;
 }
 

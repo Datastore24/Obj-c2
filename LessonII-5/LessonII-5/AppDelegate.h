@@ -13,9 +13,11 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext; //связующее звяно между приложение и PersistentStoreCoordinator
+
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel; //отвечает за модель базы данны, именно ту модель, которую мы видим в файле с расширением xcdatamodeld
+
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator; //Мост между мобильным приложением и базой данных
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;

@@ -10,4 +10,14 @@
 
 @implementation ClassWithBlock
 
++ (void) getArrayWithComplitionBlock: (NSString *) str string: (NSString *) strTwo block:(void (^) (NSMutableArray * array)) complitionBlock{
+
+    NSMutableArray * array = [NSMutableArray array];
+    [array addObject:str];
+    [array addObject:strTwo];
+    complitionBlock(array);
+}
+
+
+
 @end

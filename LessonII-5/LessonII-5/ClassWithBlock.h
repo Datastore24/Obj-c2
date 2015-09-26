@@ -10,4 +10,6 @@
 
 @interface ClassWithBlock : NSObject
 
++ (void) getArrayWithComplitionBlock: (NSString *) str string: (NSString *) strTwo block:(void (^) (NSMutableArray * array)) complitionBlock;
+
 @end

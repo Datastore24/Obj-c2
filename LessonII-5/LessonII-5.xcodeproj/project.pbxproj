@@ -14,6 +14,9 @@
 		AD9E76B01BB5BA2900F45DD8 /* LessonII_5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD9E76AE1BB5BA2900F45DD8 /* LessonII_5.xcdatamodeld */; };
 		AD9E76B21BB5BA2900F45DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9E76B11BB5BA2900F45DD8 /* Assets.xcassets */; };
 		AD9E76B51BB5BA2900F45DD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9E76B31BB5BA2900F45DD8 /* LaunchScreen.storyboard */; };
+		AD9E76C01BB5BDEF00F45DD8 /* SomePerson+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E76BD1BB5BDEF00F45DD8 /* SomePerson+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		AD9E76C11BB5BDEF00F45DD8 /* SomePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E76BF1BB5BDEF00F45DD8 /* SomePerson.m */; settings = {ASSET_TAGS = (); }; };
+		AD9E76C41BB5CDDE00F45DD8 /* ClassWithBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E76C31BB5CDDE00F45DD8 /* ClassWithBlock.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		AD9E76B11BB5BA2900F45DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9E76B41BB5BA2900F45DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD9E76B61BB5BA2900F45DD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9E76BC1BB5BDEF00F45DD8 /* SomePerson+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SomePerson+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AD9E76BD1BB5BDEF00F45DD8 /* SomePerson+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SomePerson+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AD9E76BE1BB5BDEF00F45DD8 /* SomePerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomePerson.h; sourceTree = "<group>"; };
+		AD9E76BF1BB5BDEF00F45DD8 /* SomePerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomePerson.m; sourceTree = "<group>"; };
+		AD9E76C21BB5CDDE00F45DD8 /* ClassWithBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassWithBlock.h; sourceTree = "<group>"; };
+		AD9E76C31BB5CDDE00F45DD8 /* ClassWithBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassWithBlock.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,10 @@
 		AD9E76961BB5BA2900F45DD8 = {
 			isa = PBXGroup;
 			children = (
+				AD9E76BC1BB5BDEF00F45DD8 /* SomePerson+CoreDataProperties.h */,
+				AD9E76BD1BB5BDEF00F45DD8 /* SomePerson+CoreDataProperties.m */,
+				AD9E76BE1BB5BDEF00F45DD8 /* SomePerson.h */,
+				AD9E76BF1BB5BDEF00F45DD8 /* SomePerson.m */,
 				AD9E76A11BB5BA2900F45DD8 /* LessonII-5 */,
 				AD9E76A01BB5BA2900F45DD8 /* Products */,
 			);
@@ -64,6 +77,8 @@
 				AD9E76A61BB5BA2900F45DD8 /* AppDelegate.m */,
 				AD9E76A81BB5BA2900F45DD8 /* ViewController.h */,
 				AD9E76A91BB5BA2900F45DD8 /* ViewController.m */,
+				AD9E76C21BB5CDDE00F45DD8 /* ClassWithBlock.h */,
+				AD9E76C31BB5CDDE00F45DD8 /* ClassWithBlock.m */,
 				AD9E76AB1BB5BA2900F45DD8 /* Main.storyboard */,
 				AD9E76B11BB5BA2900F45DD8 /* Assets.xcassets */,
 				AD9E76B31BB5BA2900F45DD8 /* LaunchScreen.storyboard */,
@@ -154,7 +169,10 @@
 			files = (
 				AD9E76AA1BB5BA2900F45DD8 /* ViewController.m in Sources */,
 				AD9E76B01BB5BA2900F45DD8 /* LessonII_5.xcdatamodeld in Sources */,
+				AD9E76C11BB5BDEF00F45DD8 /* SomePerson.m in Sources */,
 				AD9E76A71BB5BA2900F45DD8 /* AppDelegate.m in Sources */,
+				AD9E76C41BB5CDDE00F45DD8 /* ClassWithBlock.m in Sources */,
+				AD9E76C01BB5BDEF00F45DD8 /* SomePerson+CoreDataProperties.m in Sources */,
 				AD9E76A41BB5BA2900F45DD8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
