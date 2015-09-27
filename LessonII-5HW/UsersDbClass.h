@@ -14,5 +14,6 @@
 - (void)deleteUsers:(NSString *)urlSite andLogin:(NSString *) login;
 - (BOOL)checkUsers:(NSString *) urlSite andLogin:(NSString *)login;
 -(NSArray *) showAllUsers;
+- (void)updateUsers:(NSString *)urlSite andLogin:(NSString *)login andPassword:(NSString *)password andComment:(NSString *) comment;
 
 @end

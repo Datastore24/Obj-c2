@@ -75,5 +75,27 @@
     }
 }
 
+- (void)updateUsers:(NSString *)urlSite andLogin:(NSString *)login andPassword:(NSString *)password andComment:(NSString *) comment
+{
+    // Get the local context
+    NSManagedObjectContext *localContext    = [NSManagedObjectContext MR_context];
+    
+    // Retrieve the first person who have the given firstname
+    NSPredicate *predicate                  = [NSPredicate predicateWithFormat:@"urlSite ==[c] %@ AND login ==[c] %@", urlSite  , login];
+    Users *usersFounded                   = [Users MR_findFirstWithPredicate:predicate inContext:localContext];
+    
+    if (usersFounded)
+    {
+        usersFounded.urlSite = urlSite;
+        usersFounded.login = login;
+        usersFounded.password = password;
+        usersFounded.comments = comment;
+
+        // Save the modification in the local context
+        // With MagicalRecords 2.0.8 or newer you should use the MR_saveNestedContexts
+        [localContext MR_saveToPersistentStoreAndWait];
+    }
+}
+
 
 @end
