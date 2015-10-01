@@ -1,0 +1,23 @@
+//
+//  CustomOrderDetailTableViewCell.m
+//  Lesson6
+//
+//  Created by Кирилл Ковыршин on 01.10.15.
+//  Copyright © 2015 datastore24. All rights reserved.
+//
+
+#import "CustomOrderDetailTableViewCell.h"
+
+@implementation CustomOrderDetailTableViewCell
+
+- (void)awakeFromNib {
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
+}
+
+@end
