@@ -8,20 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import <Motis/Motis.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKit.h>
 
 @interface Parser : NSObject
 
 //Данные из массива
-@property (strong,nonatomic) NSString * orderDate;
-@property (strong,nonatomic) NSString * address;
-@property (strong,nonatomic) NSString * comment;
-@property (strong,nonatomic) NSString * customer_name;
-@property (strong,nonatomic) NSString * discount;
-@property (strong,nonatomic) NSString * external_id;
-@property (strong,nonatomic) NSString * phone1;
-@property (strong,nonatomic) NSString * orderSum;
+@property (strong,nonatomic) NSString * text;
+@property (strong,nonatomic) NSString * fullText;
+@property (strong,nonatomic) NSURL * src_big;
+@property (assign,nonatomic) CGFloat width;
+@property (assign,nonatomic) CGFloat height;
+@property (assign,nonatomic) CGFloat targetHeight;
+@property (assign,nonatomic) NSInteger countTextArray;
 
 
-- (void) parsing: (id) response andArray:(NSMutableArray*) arrayResponse andBlock:(void (^)(void)) block;
+
+
+
 
 @end

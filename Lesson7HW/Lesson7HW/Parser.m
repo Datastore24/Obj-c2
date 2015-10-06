@@ -8,52 +8,17 @@
 
 #import "Parser.h"
 
+
 @implementation Parser
 //Метод парсинга
-+ (NSDictionary*)mts_mapping
-{
-    return @{@"date": mts_key(orderDate),
-             @"address": mts_key(address),
-             @"comment": mts_key(comment),
-             @"customer_name": mts_key(customer_name),
-             @"phone1": mts_key(phone1),
-             @"discount": mts_key(discount),
-             @"external_id": mts_key(external_id),
-             @"summ": mts_key(orderSum),  // <-- KeyPath access
-             };
++ (NSDictionary *)mts_mapping {
+  return @{
+    @"text" : mts_key(text),
+    @"attachment.photo.src_big" : mts_key(src_big),
+    @"attachment.photo.width" : mts_key(width),
+    @"attachment.photo.height" : mts_key(height)
+  };
 }
 
-
-//Метод обрабатывающий ответ сервера
-- (void) parsing: (id) response andArray:(NSMutableArray*) arrayResponse andBlock:(void (^)(void)) block{
-    
-    //Если коллекция
-    if([response isKindOfClass:[NSDictionary class]]){
-        NSDictionary * dict = (NSDictionary *) response;
-        
-        Parser * parse = [[Parser alloc] init];
-        [parse mts_setValuesForKeysWithDictionary:dict];
-        
-        //Если массив, внутри которого коллекции
-    }else if([response isKindOfClass:[NSArray class]]){
-        NSArray * array = (NSArray *) response;
-        
-        [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            NSDictionary * dict = (NSDictionary *) obj;
-            Parser * parse = [[Parser alloc] init];
-            [parse mts_setValuesForKeysWithDictionary:dict];
-            
-            [arrayResponse addObject:parse];
-            if(idx == array.count - 1){
-                block();
-                
-            }
-        }];
-        
-        
-        
-    }
-    
-}
 
 @end

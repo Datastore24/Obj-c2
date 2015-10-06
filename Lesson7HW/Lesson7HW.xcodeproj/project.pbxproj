@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A5877FF5E8FFA072037043A /* libPods-Lesson7HW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C84E3F04883183B55EA1504 /* libPods-Lesson7HW.a */; };
 		AD232FE81BC2AF44005E3B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD232FE71BC2AF44005E3B77 /* main.m */; };
 		AD232FEB1BC2AF44005E3B77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD232FEA1BC2AF44005E3B77 /* AppDelegate.m */; };
 		AD232FEE1BC2AF44005E3B77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD232FED1BC2AF44005E3B77 /* ViewController.m */; };
 		AD232FF11BC2AF44005E3B77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD232FEF1BC2AF44005E3B77 /* Main.storyboard */; };
 		AD232FF31BC2AF44005E3B77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD232FF21BC2AF44005E3B77 /* Assets.xcassets */; };
 		AD232FF61BC2AF44005E3B77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD232FF41BC2AF44005E3B77 /* LaunchScreen.storyboard */; };
+		AD2330011BC2B4DC005E3B77 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = AD232FFE1BC2B4DC005E3B77 /* API.m */; settings = {ASSET_TAGS = (); }; };
+		AD2330021BC2B4DC005E3B77 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2330001BC2B4DC005E3B77 /* Parser.m */; settings = {ASSET_TAGS = (); }; };
+		AD23300E1BC2D465005E3B77 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2330051BC2D465005E3B77 /* UIImage+Alpha.m */; settings = {ASSET_TAGS = (); }; };
+		AD23300F1BC2D465005E3B77 /* UIImage+Blured_And_SnapShot_Image.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2330071BC2D465005E3B77 /* UIImage+Blured_And_SnapShot_Image.m */; settings = {ASSET_TAGS = (); }; };
+		AD2330101BC2D465005E3B77 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2330091BC2D465005E3B77 /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
+		AD2330111BC2D465005E3B77 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = AD23300B1BC2D465005E3B77 /* UIImage+Resize.m */; settings = {ASSET_TAGS = (); }; };
+		AD2330121BC2D465005E3B77 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = AD23300D1BC2D465005E3B77 /* UIImage+RoundedCorner.m */; settings = {ASSET_TAGS = (); }; };
+		AD2330151BC2D561005E3B77 /* TextAndImageHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2330141BC2D561005E3B77 /* TextAndImageHeight.m */; settings = {ASSET_TAGS = (); }; };
+		AD2330181BC2E2C4005E3B77 /* SingleTone.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2330171BC2E2C4005E3B77 /* SingleTone.m */; settings = {ASSET_TAGS = (); }; };
+		AD23301B1BC2F497005E3B77 /* ParsingResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AD23301A1BC2F497005E3B77 /* ParsingResponse.m */; settings = {ASSET_TAGS = (); }; };
+		AD23301D1BC30481005E3B77 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = AD23301C1BC30481005E3B77 /* down.png */; settings = {ASSET_TAGS = (); }; };
+		AD23301F1BC308E2005E3B77 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = AD23301E1BC308E2005E3B77 /* right.png */; settings = {ASSET_TAGS = (); }; };
+		AD2330221BC3B563005E3B77 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2330211BC3B563005E3B77 /* DetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140E4F18B8B37DD92C79CCBD /* Pods-Lesson7HW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson7HW.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson7HW/Pods-Lesson7HW.release.xcconfig"; sourceTree = "<group>"; };
+		8EECC334A62C2BD5D962F1B2 /* Pods-Lesson7HW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lesson7HW.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lesson7HW/Pods-Lesson7HW.debug.xcconfig"; sourceTree = "<group>"; };
+		9C84E3F04883183B55EA1504 /* libPods-Lesson7HW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lesson7HW.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD232FE31BC2AF44005E3B77 /* Lesson7HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson7HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD232FE71BC2AF44005E3B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD232FE91BC2AF44005E3B77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +43,30 @@
 		AD232FF21BC2AF44005E3B77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD232FF51BC2AF44005E3B77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD232FF71BC2AF44005E3B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD232FFD1BC2B4DC005E3B77 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		AD232FFE1BC2B4DC005E3B77 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		AD232FFF1BC2B4DC005E3B77 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		AD2330001BC2B4DC005E3B77 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		AD2330041BC2D465005E3B77 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		AD2330051BC2D465005E3B77 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		AD2330061BC2D465005E3B77 /* UIImage+Blured_And_SnapShot_Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Blured_And_SnapShot_Image.h"; sourceTree = "<group>"; };
+		AD2330071BC2D465005E3B77 /* UIImage+Blured_And_SnapShot_Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Blured_And_SnapShot_Image.m"; sourceTree = "<group>"; };
+		AD2330081BC2D465005E3B77 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		AD2330091BC2D465005E3B77 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		AD23300A1BC2D465005E3B77 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		AD23300B1BC2D465005E3B77 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		AD23300C1BC2D465005E3B77 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		AD23300D1BC2D465005E3B77 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		AD2330131BC2D561005E3B77 /* TextAndImageHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextAndImageHeight.h; sourceTree = "<group>"; };
+		AD2330141BC2D561005E3B77 /* TextAndImageHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextAndImageHeight.m; sourceTree = "<group>"; };
+		AD2330161BC2E2C4005E3B77 /* SingleTone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTone.h; sourceTree = "<group>"; };
+		AD2330171BC2E2C4005E3B77 /* SingleTone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTone.m; sourceTree = "<group>"; };
+		AD2330191BC2F497005E3B77 /* ParsingResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsingResponse.h; sourceTree = "<group>"; };
+		AD23301A1BC2F497005E3B77 /* ParsingResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParsingResponse.m; sourceTree = "<group>"; };
+		AD23301C1BC30481005E3B77 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		AD23301E1BC308E2005E3B77 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		AD2330201BC3B563005E3B77 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AD2330211BC3B563005E3B77 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5877FF5E8FFA072037043A /* libPods-Lesson7HW.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +86,8 @@
 			children = (
 				AD232FE51BC2AF44005E3B77 /* Lesson7HW */,
 				AD232FE41BC2AF44005E3B77 /* Products */,
+				E4F85ABABAA36780C325C148 /* Pods */,
+				FAEE59DA10A3DBA946DCE270 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +102,25 @@
 		AD232FE51BC2AF44005E3B77 /* Lesson7HW */ = {
 			isa = PBXGroup;
 			children = (
+				AD23301C1BC30481005E3B77 /* down.png */,
+				AD23301E1BC308E2005E3B77 /* right.png */,
+				AD2330161BC2E2C4005E3B77 /* SingleTone.h */,
+				AD2330171BC2E2C4005E3B77 /* SingleTone.m */,
+				AD2330031BC2D452005E3B77 /* Category */,
 				AD232FE91BC2AF44005E3B77 /* AppDelegate.h */,
 				AD232FEA1BC2AF44005E3B77 /* AppDelegate.m */,
+				AD232FFD1BC2B4DC005E3B77 /* API.h */,
+				AD232FFE1BC2B4DC005E3B77 /* API.m */,
+				AD232FFF1BC2B4DC005E3B77 /* Parser.h */,
+				AD2330001BC2B4DC005E3B77 /* Parser.m */,
+				AD2330191BC2F497005E3B77 /* ParsingResponse.h */,
+				AD23301A1BC2F497005E3B77 /* ParsingResponse.m */,
+				AD2330131BC2D561005E3B77 /* TextAndImageHeight.h */,
+				AD2330141BC2D561005E3B77 /* TextAndImageHeight.m */,
 				AD232FEC1BC2AF44005E3B77 /* ViewController.h */,
 				AD232FED1BC2AF44005E3B77 /* ViewController.m */,
+				AD2330201BC3B563005E3B77 /* DetailViewController.h */,
+				AD2330211BC3B563005E3B77 /* DetailViewController.m */,
 				AD232FEF1BC2AF44005E3B77 /* Main.storyboard */,
 				AD232FF21BC2AF44005E3B77 /* Assets.xcassets */,
 				AD232FF41BC2AF44005E3B77 /* LaunchScreen.storyboard */,
@@ -79,6 +138,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD2330031BC2D452005E3B77 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AD2330041BC2D465005E3B77 /* UIImage+Alpha.h */,
+				AD2330051BC2D465005E3B77 /* UIImage+Alpha.m */,
+				AD2330061BC2D465005E3B77 /* UIImage+Blured_And_SnapShot_Image.h */,
+				AD2330071BC2D465005E3B77 /* UIImage+Blured_And_SnapShot_Image.m */,
+				AD2330081BC2D465005E3B77 /* UIImage+ImageEffects.h */,
+				AD2330091BC2D465005E3B77 /* UIImage+ImageEffects.m */,
+				AD23300A1BC2D465005E3B77 /* UIImage+Resize.h */,
+				AD23300B1BC2D465005E3B77 /* UIImage+Resize.m */,
+				AD23300C1BC2D465005E3B77 /* UIImage+RoundedCorner.h */,
+				AD23300D1BC2D465005E3B77 /* UIImage+RoundedCorner.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		E4F85ABABAA36780C325C148 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EECC334A62C2BD5D962F1B2 /* Pods-Lesson7HW.debug.xcconfig */,
+				140E4F18B8B37DD92C79CCBD /* Pods-Lesson7HW.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAEE59DA10A3DBA946DCE270 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C84E3F04883183B55EA1504 /* libPods-Lesson7HW.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD232FFA1BC2AF44005E3B77 /* Build configuration list for PBXNativeTarget "Lesson7HW" */;
 			buildPhases = (
+				3F4C5C03D5D1C00FE73E33BF /* Check Pods Manifest.lock */,
 				AD232FDF1BC2AF44005E3B77 /* Sources */,
 				AD232FE01BC2AF44005E3B77 /* Frameworks */,
 				AD232FE11BC2AF44005E3B77 /* Resources */,
+				D356E7717703AC93279AD453 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,22 +231,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD23301F1BC308E2005E3B77 /* right.png in Resources */,
 				AD232FF61BC2AF44005E3B77 /* LaunchScreen.storyboard in Resources */,
 				AD232FF31BC2AF44005E3B77 /* Assets.xcassets in Resources */,
 				AD232FF11BC2AF44005E3B77 /* Main.storyboard in Resources */,
+				AD23301D1BC30481005E3B77 /* down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F4C5C03D5D1C00FE73E33BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D356E7717703AC93279AD453 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lesson7HW/Pods-Lesson7HW-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD232FDF1BC2AF44005E3B77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2330101BC2D465005E3B77 /* UIImage+ImageEffects.m in Sources */,
 				AD232FEE1BC2AF44005E3B77 /* ViewController.m in Sources */,
+				AD2330151BC2D561005E3B77 /* TextAndImageHeight.m in Sources */,
+				AD2330181BC2E2C4005E3B77 /* SingleTone.m in Sources */,
 				AD232FEB1BC2AF44005E3B77 /* AppDelegate.m in Sources */,
+				AD23300E1BC2D465005E3B77 /* UIImage+Alpha.m in Sources */,
+				AD2330011BC2B4DC005E3B77 /* API.m in Sources */,
+				AD2330111BC2D465005E3B77 /* UIImage+Resize.m in Sources */,
+				AD2330121BC2D465005E3B77 /* UIImage+RoundedCorner.m in Sources */,
 				AD232FE81BC2AF44005E3B77 /* main.m in Sources */,
+				AD23300F1BC2D465005E3B77 /* UIImage+Blured_And_SnapShot_Image.m in Sources */,
+				AD23301B1BC2F497005E3B77 /* ParsingResponse.m in Sources */,
+				AD2330021BC2B4DC005E3B77 /* Parser.m in Sources */,
+				AD2330221BC3B563005E3B77 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +400,7 @@
 		};
 		AD232FFB1BC2AF44005E3B77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EECC334A62C2BD5D962F1B2 /* Pods-Lesson7HW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lesson7HW/Info.plist;
@@ -270,6 +412,7 @@
 		};
 		AD232FFC1BC2AF44005E3B77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140E4F18B8B37DD92C79CCBD /* Pods-Lesson7HW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Lesson7HW/Info.plist;
@@ -298,6 +441,7 @@
 				AD232FFC1BC2AF44005E3B77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

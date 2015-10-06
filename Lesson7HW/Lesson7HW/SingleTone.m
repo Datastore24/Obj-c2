@@ -10,7 +10,7 @@
 
 @implementation SingleTone
 
-@synthesize someProperty;
+@synthesize targetHeight;
 
 #pragma mark Singleton Methods
 

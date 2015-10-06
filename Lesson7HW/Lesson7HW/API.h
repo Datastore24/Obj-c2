@@ -12,9 +12,8 @@
 @interface API : NSObject
 
 //Метод запрашивающий список заказов
--(void) getDataFromServerWithMethod: (NSString *) string complitionBlock: (void (^) (id response)) compitionBack;
+-(void) getDataFromServerWithParams: (NSDictionary *) params method:(NSString*) method complitionBlock: (void (^) (id response)) compitionBack;
 
-//Детали заказа
--(void) getOrderFromServerWithId: (NSString *) orderId complitionBlock:  (void (^) (id response)) compitionBack;
+
 
 @end

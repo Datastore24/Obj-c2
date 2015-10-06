@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface SingleTone : NSObject{
     NSString *someProperty;
 }
 
-@property (nonatomic, retain) NSString *someProperty;
+@property (assign,nonatomic) CGFloat targetHeight;
 
 + (id)sharedManager;
 

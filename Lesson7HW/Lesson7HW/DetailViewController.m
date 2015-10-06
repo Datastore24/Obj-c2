@@ -10,13 +10,29 @@
 
 @interface DetailViewController ()
 
+
+
 @end
 
 @implementation DetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UITextView * textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 90, self.view.frame.size.width-10, self.view.frame.size.height-95)];
+    textView.editable = NO;
+    textView.scrollEnabled = YES;
+    textView.font=[UIFont systemFontOfSize:15];
+    textView.text=self.detailText;
+    
+    [self.view addSubview:textView];
+
     // Do any additional setup after loading the view.
+}
+- (IBAction)backAction:(id)sender {
+    DetailViewController *back = [self.storyboard instantiateViewControllerWithIdentifier:@"main"];
+    [self.navigationController pushViewController:back animated:NO];
+    [UIView transitionWithView:self.navigationController.view duration:0.5 options:UIViewAnimationOptionTransitionFlipFromLeft     animations:nil completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
