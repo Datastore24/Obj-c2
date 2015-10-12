@@ -16,7 +16,8 @@
     @"text" : mts_key(text),
     @"attachment.photo.src_big" : mts_key(src_big),
     @"attachment.photo.width" : mts_key(width),
-    @"attachment.photo.height" : mts_key(height)
+    @"attachment.photo.height" : mts_key(height),
+    @"attachment.photo.text" : mts_key(photoText)
   };
 }
 

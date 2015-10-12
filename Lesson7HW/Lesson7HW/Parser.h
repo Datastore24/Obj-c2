@@ -17,9 +17,12 @@
 @property (strong,nonatomic) NSString * text;
 @property (strong,nonatomic) NSString * fullText;
 @property (strong,nonatomic) NSURL * src_big;
+@property (strong,nonatomic) NSString * photoText;
 @property (assign,nonatomic) CGFloat width;
 @property (assign,nonatomic) CGFloat height;
-@property (assign,nonatomic) CGFloat targetHeight;
+@property (assign,nonatomic) CGFloat targetHeightText;
+@property (assign,nonatomic) CGFloat targetHeightPhotoText;
+@property (assign,nonatomic) CGFloat targetHeightImage;
 @property (assign,nonatomic) NSInteger countTextArray;
 
 
